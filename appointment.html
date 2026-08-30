@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Book a travel consultation with WanderLux Travel Agency for personalised holiday planning.">
+
+    <meta name="keywords"
+        content="WanderLux, travel consultation, travel appointment, holiday planning, travel agency">
+
+    <meta name="author" content="WanderLux Travel Agency">
+
+    <title>Book an Appointment | WanderLux</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!-- ================================
+         NAVIGATION
+    ================================= -->
+
+    <header class="site-header">
+
+        <div class="container nav-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                Wander<span>Lux</span>
+            </a>
+
+
+            <!-- Navigation -->
+            <nav class="main-nav" aria-label="Main navigation">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="destinations.html">
+                    Destinations
+                </a>
+
+                <a href="calculator.html">
+                    Trip Calculator
+                </a>
+
+                <a href="appointment.html" class="active">
+                    Appointment
+                </a>
+
+                <a href="about.html">
+                    About Us
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================================
+         PAGE HERO
+    ================================= -->
+
+    <section class="page-hero appointment-hero">
+
+        <div class="page-hero-content">
+
+            <p class="eyebrow">
+                PLAN YOUR JOURNEY
+            </p>
+
+            <h1>
+                Book a Travel
+                <span>Consultation</span>
+            </h1>
+
+            <p>
+                Tell us about your travel plans and our consultants
+                will help create the perfect journey for you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================================
+         APPOINTMENT SECTION
+    ================================= -->
+
+    <main>
+
+        <section class="appointment-section">
+
+            <div class="container">
+
+                <!-- Section Heading -->
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        LET'S PLAN TOGETHER
+                    </p>
+
+                    <h2>
+                        Book Your Appointment
+                    </h2>
+
+                    <p>
+                        Complete the form below and a WanderLux
+                        travel consultant will contact you.
+                    </p>
+
+                </div>
+
+
+                <!-- Appointment Form Container -->
+                <div class="appointment-container">
+
+                    <form id="appointmentForm">
+
+
+                        <!-- Row 1 -->
+                        <div class="form-row">
+
+                            <!-- Full Name -->
+                            <div class="form-group">
+
+                                <label for="fullName">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="fullName"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Email -->
+                            <div class="form-group">
+
+                                <label for="email">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Row 2 -->
+                        <div class="form-row">
+
+                            <!-- Phone -->
+                            <div class="form-group">
+
+                                <label for="phone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Destination -->
+                            <div class="form-group">
+
+                                <label for="destination">
+                                    Preferred Destination
+                                </label>
+
+                                <select
+                                    id="destination"
+                                    name="destination"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select a destination
+                                    </option>
+
+                                    <option value="Bali">
+                                        Bali
+                                    </option>
+
+                                    <option value="Maldives">
+                                        Maldives
+                                    </option>
+
+                                    <option value="Paris">
+                                        Paris
+                                    </option>
+
+                                    <option value="Sydney">
+                                        Sydney
+                                    </option>
+
+                                    <option value="Dubai">
+                                        Dubai
+                                    </option>
+
+                                    <option value="Switzerland">
+                                        Switzerland
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Row 3 -->
+                        <div class="form-row">
+
+                            <!-- Preferred Date -->
+                            <div class="form-group">
+
+                                <label for="preferredDate">
+                                    Preferred Date
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="preferredDate"
+                                    name="preferredDate"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Number of Travellers -->
+                            <div class="form-group">
+
+                                <label for="travellers">
+                                    Number of Travellers
+                                </label>
+
+                                <input
+                                    type="number"
+                                    id="travellers"
+                                    name="travellers"
+                                    min="1"
+                                    max="20"
+                                    placeholder="Number of travellers"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Travel Details -->
+                        <div class="form-group">
+
+                            <label for="tripDetails">
+                                Tell Us About Your Trip
+                            </label>
+
+                            <textarea
+                                id="tripDetails"
+                                name="tripDetails"
+                                placeholder="Tell us about your travel preferences..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- Submit Button -->
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Book My Appointment →
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================================
+             INFORMATION SECTION
+        ================================= -->
+
+        <section class="calculator-info">
+
+            <div class="container">
+
+                <div class="info-grid">
+
+
+                    <!-- Card 1 -->
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            📅
+                        </div>
+
+                        <h3>
+                            Flexible Planning
+                        </h3>
+
+                        <p>
+                            Choose a convenient date and tell us
+                            what you are looking for in your trip.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Card 2 -->
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            🌍
+                        </div>
+
+                        <h3>
+                            Travel Expertise
+                        </h3>
+
+                        <p>
+                            Our consultants can help you plan
+                            memorable domestic and international trips.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Card 3 -->
+                    <div class="info-card">
+
+                        <div class="info-icon">
+                            ✨
+                        </div>
+
+                        <h3>
+                            Personalised Service
+                        </h3>
+
+                        <p>
+                            We use your travel preferences to help
+                            create a journey that suits your needs.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================================
+         FOOTER
+    ================================= -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-grid">
+
+
+            <!-- Footer About -->
+            <div>
+
+                <a href="index.html" class="logo footer-logo">
+                    Wander<span>Lux</span>
+                </a>
+
+                <p>
+                    Your Journey. Our Expertise.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div>
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="destinations.html">
+                    Destinations
+                </a>
+
+                <a href="calculator.html">
+                    Trip Calculator
+                </a>
+
+                <a href="appointment.html">
+                    Appointment
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div>
+
+                <h3>
+                    Contact
+                </h3>
+
+                <p>
+                    📍 Melbourne, Australia
+                </p>
+
+                <p>
+                    📞 +61 3 9000 1234
+                </p>
+
+                <p>
+                    ✉️ hello@wanderlux.com
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 WanderLux Travel Agency.
+                All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
